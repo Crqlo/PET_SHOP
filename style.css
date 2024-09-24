@@ -1,0 +1,318 @@
+/* RESET BÁSICO */
+/* Remove margens e padding padrão e ajusta o box-model */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Inclui padding e borda na largura total do elemento */
+}
+
+/* ESTILOS GERAIS DO CORPO */
+body {
+  font-family: 'Comic Sans MS', sans-serif; /* Fonte amigável e fácil de ler */
+  background-color: #f2f8ff; /* Cor de fundo suave */
+  color: pink; /* Cor padrão para o texto */
+  line-height: 1.6; /* Melhora a legibilidade */
+  text-align: justify; /* Justifica o texto */
+}
+
+/* ESTILOS DO CABEÇALHO */
+header {
+  background-color: pink; /* Cor vibrante para o cabeçalho */
+  padding: 20px 0; /* Espaçamento superior e inferior */
+  text-align: center; /* Centraliza o conteúdo */
+  border-bottom: 4px solid plum; /* Borda inferior */
+}
+
+.logo img {
+  width: 180px; /* Tamanho da imagem da logo */
+}
+
+/* NAVEGAÇÃO */
+nav ul {
+  list-style: none; /* Remove marcadores da lista */
+  display: flex; /* Coloca os itens em linha */
+  justify-content: center; /* Centraliza os itens */
+  margin-top: 10px; /* Espaçamento superior */
+}
+
+nav ul li {
+  margin: 0 20px; /* Espaçamento lateral entre links */
+}
+
+nav ul li a {
+  text-decoration: none; /* Remove sublinhado */
+  color: white; /* Cor do texto */
+  font-weight: bold; /* Negrito */
+  font-size: 18px; /* Tamanho da fonte */
+  transition: color 0.3s; /* Transição suave */
+}
+
+nav ul li a:hover {
+  color: rgb(250, 121, 164); /* Cor ao passar o mouse */
+}
+
+/* ESTILOS DO BANNER */
+.banner {
+  position: relative; /* Necessário para posicionar o texto sobre a imagem */
+  text-align: center; /* Centraliza o texto */
+  margin-bottom: 30px; /* Espaçamento inferior */
+}
+
+.banner img {
+  width: 100%; /* Ocupa toda a largura do container */
+  max-height: 400px; /* Limita a altura da imagem */
+  object-fit: cover; /* Ajusta a imagem sem distorcer */
+}
+
+.banner h1 {
+  position: absolute; /* Título flutua sobre a imagem */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centraliza */
+  color: plum; /* Cor do texto */
+  font-size: 48px; /* Tamanho grande */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra do texto */
+}
+
+.banner p {
+  position: absolute; /* Texto flutuante */
+  bottom: 20px; /* Rodapé da imagem */
+  left: 50%;
+  transform: translateX(-50%); /* Centraliza */
+  background-color: rgba(243, 168, 180, 0.514); /* Fundo semitransparente */
+  color: white; /* Cor do texto */
+  padding: 10px 20px; /* Espaçamento interno */
+  border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* SEÇÃO "SOBRE NÓS" */
+.sobre-nos {
+  text-align: center; /* Centraliza o texto */
+  padding: 50px 20px; /* Espaçamento interno */
+}
+
+.sobre-nos h1 {
+  font-size: 36px; /* Tamanho grande */
+  color: pink; /* Cor vibrante */
+  margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+.sobre-nos p {
+  font-size: 20px; /* Tamanho maior */
+  color: #666; /* Cor suave */
+  margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+.sobre-nos .botao {
+  background-color: pink; /* Cor do botão */
+  color: white; /* Cor do texto */
+  padding: 10px 20px; /* Espaçamento interno */
+  text-decoration: none; /* Remove sublinhado */
+  font-size: 18px; /* Tamanho da fonte */
+  border-radius: 5px; /* Bordas arredondadas */
+  transition: background-color 0.3s; /* Transição suave */
+}
+
+.sobre-nos .botao:hover {
+  background-color: plum; /* Cor ao passar o mouse */
+}
+
+/* RODAPÉ */
+footer {
+  background-color: pink; /* Cor de fundo */
+  text-align: center; /* Centraliza o texto */
+  padding: 20px 0; /* Espaçamento interno */
+  font-size: 14px; /* Tamanho da fonte */
+  color: white; /* Cor do texto */
+  border-top: 4px solid plum; /* Borda superior */
+  position: fixed; /* Fixa na parte inferior */
+  bottom: 0;
+  width: 100%;
+}
+
+/* PÁGINAS INTERNAS */
+.servicos, .sobre, .contato {
+  padding: 50px 20px; /* Espaçamento interno */
+  text-align: center; /* Centraliza o conteúdo */
+}
+
+.servicos h1, .sobre h1, .contato h1 {
+  font-size: 36px; /* Tamanho grande */
+  color: plum; /* Cor vibrante */
+  margin-bottom: 30px; /* Espaçamento inferior */
+}
+
+.servicos ul {
+  list-style: none; /* Remove marcadores */
+  font-size: 20px; /* Tamanho da fonte */
+}
+
+.servicos ul li {
+  margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+.contato form {
+  max-width: 600px; /* Largura máxima do formulário */
+  margin: 0 auto; /* Centraliza o formulário */
+}
+
+.contato label {
+  display: block; /* Faz o label ocupar a largura total */
+  margin-bottom: 5px; /* Espaçamento inferior */
+  font-size: 18px; /* Tamanho da fonte */
+}
+
+.contato input, .contato textarea {
+  width: 100%; /* Ocupa toda a largura */
+  padding: 10px; /* Espaçamento interno */
+  margin-bottom: 20px; /* Espaçamento inferior */
+  font-size: 16px; /* Tamanho da fonte */
+  border: 1px solid #ccc; /* Borda simples */
+  border-radius: 5px; /* Bordas arredondadas */
+}
+
+.contato button {
+  background-color: pink; /* Cor do botão */
+  color: white; /* Cor do texto */
+  padding: 10px 20px; /* Espaçamento interno */
+  border: none; /* Remove borda */
+  border-radius: 5px; /* Bordas arredondadas */
+  font-size: 18px; /* Tamanho da fonte */
+  cursor: pointer; /* Cursor de mão */
+}
+
+.contato button:hover {
+  background-color: plum; /* Cor ao passar o mouse */
+}
+
+/* SEÇÃO DE WHATSAPP NA PÁGINA DE CONTATO */
+.whatsapp-contato {
+  margin-top: 40px; /* Espaçamento superior */
+  text-align: center; /* Centraliza o conteúdo */
+}
+
+.whatsapp-botao {
+  background-color: pink; /* Cor do botão */
+  color: white; /* Cor do texto */
+  padding: 15px 30px; /* Espaçamento interno */
+  text-decoration: none; /* Remove sublinhado */
+  font-size: 18px; /* Tamanho da fonte */
+  border-radius: 5px; /* Bordas arredondadas */
+  display: inline-flex; /* Exibe como bloco em linha */
+  align-items: center; /* Alinha verticalmente */
+  transition: background-color 0.3s ease; /* Transição suave */
+}
+
+.whatsapp-botao:hover {
+  background-color: plum; /* Cor ao passar o mouse */
+}
+
+.whatsapp-botao img {
+  width: 24px; /* Tamanho do ícone */
+  height: auto; /* Mantém proporção */
+  margin-right: 10px; /* Espaço entre ícone e texto */
+  vertical-align: middle; /* Alinha ícone ao texto */
+}
+
+/* RESPOSIVIDADE BÁSICA */
+@media (max-width: 768px) {
+  header {
+      padding: 10px 0; /* Reduz o padding do cabeçalho */
+  }
+
+  .logo img {
+      width: 150px; /* Reduz a imagem do logo */
+  }
+
+  nav ul {
+      flex-direction: column; /* Alinha itens verticalmente */
+      margin-top: 10px; /* Mantém espaçamento */
+  }
+
+  nav ul li {
+      margin: 10px 0; /* Espaço vertical entre itens */
+  }
+
+  .banner h1 {
+      font-size: 36px; /* Reduz tamanho do título no banner */
+  }
+
+  .banner p {
+      font-size: 16px; /* Reduz tamanho do parágrafo no banner */
+      padding: 5px 10px; /* Ajusta padding */
+  }
+
+  .sobre-nos, .servicos, .contato {
+      padding: 20px; /* Reduz padding interno */
+  }
+
+  .whatsapp-botao {
+      font-size: 16px; /* Reduz tamanho do botão de WhatsApp */
+      padding: 10px 20px; /* Ajusta padding */
+  }
+
+  .whatsapp-botao img {
+      width: 20px; /* Reduz ícone do WhatsApp */
+  }
+
+  footer {
+      font-size: 12px; /* Reduz tamanho do rodapé */
+      padding: 10px 0; /* Ajusta padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .banner h1 {
+      font-size: 28px; /* Reduz tamanho do título no banner */
+  }
+
+  .banner p {
+      font-size: 14px; /* Reduz tamanho do parágrafo no banner */
+  }
+
+  .contato form {
+      width: 100%; /* Formulário ocupa toda a largura */
+  }
+
+  .contato input, .contato textarea, .contato button {
+      font-size: 14px; /* Reduz tamanho da fonte */
+      padding: 8px; /* Ajusta padding */
+  }
+
+  .whatsapp-botao {
+      font-size: 14px; /* Reduz tamanho do botão */
+      padding: 8px 16px; /* Ajusta padding */
+  }
+
+  .whatsapp-botao img {
+      width: 18px; /* Reduz ícone do WhatsApp */
+  }
+}
+
+/* CLASSES AUXILIARES */
+.pink-background {
+  background-color: #ffc0cb88; /* Cor rosa */
+  padding: 20px; /* Espaçamento interno */
+  border-radius: 8px; /* Bordas arredondadas */
+  color: white; /* Cor do texto */
+  text-align: center; /* Centraliza o texto */
+}
+
+.justify-text {
+  text-align: justify; /* Justifica o texto */
+  line-height: 1.5; /* Espaçamento entre linhas */
+}
+
+/* ESTILOS DA MISSÃO */
+.mission-values {
+  display: flex; /* Alinha os itens em uma linha */
+  flex-direction: row; /* Itens em linha */
+  gap: 20px; /* Espaçamento entre os contêineres */
+  align-content: center; /* Alinhamento vertical */
+  justify-content: center; /* Alinhamento horizontal */
+}
+
+.mission-item {
+  padding: 15px; /* Espaçamento interno */
+  border-radius: 8px; /* Bordas arredondadas */
+}
